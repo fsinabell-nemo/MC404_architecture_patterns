@@ -57,12 +57,11 @@ def main() -> None:
     primes = [p for sub in results for p in sub]
     dt = time.time() - t0
 
-    print(f"Found {len(primes)} primes in [{start}, {end}] using Blackboard in {dt:.2f}s")
-
-    print(f"Found {len(primes)} primes in [{start}, {end}]")
+    print(f"Found {len(primes)} primes in [{start}, {end}] using Master-Slave in {dt:.2f}s")
     print("First 20:", primes[:20])
     print("Last  20:", primes[-20:])
 
 
 if __name__ == "__main__":
     main()
+
